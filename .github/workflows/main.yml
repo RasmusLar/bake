@@ -1,0 +1,12 @@
+on:
+  pull_request: 
+    branches: ["master"]
+
+jobs:
+  build:
+    name: Just test.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print something
+        run: echo "Hello!"
+    
